@@ -1,3 +1,6 @@
+1.excel 檔案
+2.計時器
+3.格式化輸出
 #######################################  excel 檔案
 wb = Workbook()
 ws = wb.active
@@ -37,3 +40,7 @@ tEnd = time.time()#計時結束
 #列印結果
 print "It cost %f sec" % (tEnd - tStart)#會自動做近位
 print tEnd - tStart#原型長這樣
+
+
+########################################格式化輸出
+print("{:08d}abc{:08d}".format(i,i))#多變數
