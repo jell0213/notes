@@ -1,6 +1,7 @@
 1.excel 檔案
 2.計時器
 3.格式化輸出
+4.影像畫直方圖
 #######################################  excel 檔案
 wb = Workbook()
 ws = wb.active
@@ -44,3 +45,17 @@ print tEnd - tStart#原型長這樣
 
 ########################################格式化輸出
 print("{:08d}abc{:08d}".format(i,i))#多變數
+
+
+########################################影像畫直方圖bgr
+import cv2
+import numpy as np
+hist = cv2.calcHist([image1], [0], None, [256], [0,256])
+hist = np.reshape(hist, (256))
+b = hist
+hist = cv2.calcHist([image1], [1], None, [256], [0,256])
+hist = np.reshape(hist, (256))
+g = hist
+hist = cv2.calcHist([image1], [2], None, [256], [0,256])
+hist = np.reshape(hist, (256))
+r = hist
