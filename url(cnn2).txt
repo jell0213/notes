@@ -6,3 +6,5 @@ https://paperswithcode.com/paper/image2stylegan-how-to-edit-the-embedded
 
 Disentangled Image Generation Through Structured Noise Injection
 https://paperswithcode.com/paper/disentangled-image-generation-through
+
+2
